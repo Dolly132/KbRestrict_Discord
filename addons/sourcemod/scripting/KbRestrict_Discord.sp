@@ -1,10 +1,13 @@
 #pragma semicolon 1
 
-#include <KbRestrict>
+#include <KnockbackRestrict>
 
 #define PLUGIN_NAME "KbRestrict_Discord"
 
 #include <relay_helper>
+
+#tryinclude <sourcebanschecker>
+#tryinclude <sourcecomms>
 
 #pragma newdecls required
 
