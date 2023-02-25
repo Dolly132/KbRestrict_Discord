@@ -3,6 +3,7 @@
 #include <KnockbackRestrict>
 
 #define PLUGIN_NAME "KbRestrict_Discord"
+#define STEAM_API_CVAR "kban_steam_api"
 
 #include <relay_helper>
 
