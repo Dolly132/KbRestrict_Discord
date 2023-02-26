@@ -54,7 +54,7 @@ public void OnClientDisconnect(int client) {
 	g_sClientAvatar[client][0] = '\0';
 }
 
-public void KB_OnClientKbanned(int target, int admin, int length, const char[] reason, int kbansNumber)
+public void KR_OnClientKbanned(int target, int admin, int length, const char[] reason, int kbansNumber)
 {
 	if(!g_Kban.enable.BoolValue) {
 		return;
@@ -67,7 +67,7 @@ public void KB_OnClientKbanned(int target, int admin, int length, const char[] r
 	SendDiscordMessage(g_Kban, Message_Type_Kban, admin, target, length, reason, kbansNumber, 0, _, g_sClientAvatar[target]);
 }
 
-public void KB_OnClientKunbanned(int target, int admin, const char[] reason, int kbansNumber)
+public void KR_OnClientKunbanned(int target, int admin, const char[] reason, int kbansNumber)
 {
     if(!g_Kban.enable.BoolValue) {
     	return;
